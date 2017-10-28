@@ -11,3 +11,10 @@ M = length(h); n = 0:M-1;
 
 % use the type1 FIR function to define the filter
 [Hr,w,a,L] = Hr_Type1(h);
+
+% get the amplitude
+amax = max(a)+1; amin = min(a)-1;
+
+% plot the impulse response of the filter
+subplot(2,2,1); stem(n,h); axis([-1 2*L+1 amin amax])
+
