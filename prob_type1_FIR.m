@@ -23,6 +23,10 @@ xlabel('n'); ylabel('h(n)'); title('Impulse Response')
 subplot(2,2,3); stem(0:L,a); axis([-1 2*L+1 amin amax]) 
 xlabel('n'); ylabel('a(n)'); title('a(n) coefficients')
 
-
+% plot the amplitude freq response
+subplot(2,2,2); plot(w/pi,Hr); grid
+xlabel('frequency in pi units'); ylabel('Hr')
+title('Type-1 Amplitude Response')
+subplot(2,2,4); pzplotz(h,1)
 
 
