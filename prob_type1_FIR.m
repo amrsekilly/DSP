@@ -17,4 +17,12 @@ amax = max(a)+1; amin = min(a)-1;
 
 % plot the impulse response of the filter
 subplot(2,2,1); stem(n,h); axis([-1 2*L+1 amin amax])
+xlabel('n'); ylabel('h(n)'); title('Impulse Response')
+
+% get the amplitude coeffecients
+subplot(2,2,3); stem(0:L,a); axis([-1 2*L+1 amin amax]) 
+xlabel('n'); ylabel('a(n)'); title('a(n) coefficients')
+
+
+
 
