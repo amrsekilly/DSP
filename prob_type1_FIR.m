@@ -27,6 +27,6 @@ xlabel('n'); ylabel('a(n)'); title('a(n) coefficients')
 subplot(2,2,2); plot(w/pi,Hr); grid
 xlabel('frequency in pi units'); ylabel('Hr')
 title('Type-1 Amplitude Response')
-subplot(2,2,4); pzplotz(h,1)
+subplot(2,2,4); pzplot(h,1)
 
 
